@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en" data-theme-step="3">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Vaibhaav Tiwari is an AI engineer, researcher, and agent systems builder."
+    />
+    <title>Vaibhaav Tiwari, Engineer</title>
+    <link rel="icon" href="assets/source/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css?v=annotations-6" />
+    <script>
+      (function () {
+        try {
+          var themes = [
+            { name: "dawn", bg: "oklch(96% 0.025 21)", text: "oklch(20% 0.015 21)", muted: "oklch(50% 0.02 21)", border: "oklch(86% 0.018 21)", accent: "oklch(62% 0.19 21)", cardHover: "oklch(62% 0.19 21)", onAccent: "#fff", onAccentMuted: "rgba(255,255,255,.7)" },
+            { name: "morning", bg: "oklch(97.5% 0.014 21)", text: "oklch(20% 0.015 21)", muted: "oklch(50% 0.02 21)", border: "oklch(87.5% 0.018 21)", accent: "oklch(62% 0.19 21)", cardHover: "oklch(62% 0.19 21)", onAccent: "#fff", onAccentMuted: "rgba(255,255,255,.7)" },
+            { name: "noon", bg: "oklch(99.5% 0.006 21)", text: "oklch(20% 0.015 21)", muted: "oklch(50% 0.02 21)", border: "oklch(89.5% 0.018 21)", accent: "oklch(62% 0.19 21)", cardHover: "oklch(62% 0.19 21)", onAccent: "#fff", onAccentMuted: "rgba(255,255,255,.7)" },
+            { name: "evening", bg: "oklch(14% 0.018 21)", text: "oklch(91% 0.012 21)", muted: "oklch(66% 0.018 21)", border: "oklch(28% 0.018 21)", accent: "oklch(70% 0.16 21)", cardHover: "oklch(70% 0.16 21)", onAccent: "#fff", onAccentMuted: "rgba(255,255,255,.7)" },
+            { name: "night", bg: "oklch(6% 0.012 21)", text: "oklch(91% 0.012 21)", muted: "oklch(66% 0.018 21)", border: "oklch(28% 0.018 21)", accent: "oklch(70% 0.16 21)", cardHover: "oklch(70% 0.16 21)", onAccent: "#fff", onAccentMuted: "rgba(255,255,255,.7)" }
+          ];
+          var saved = parseInt(localStorage.getItem("theme-step") || "", 10);
+          var index = Number.isInteger(saved) && saved >= 0 && saved < themes.length ? saved : 3;
+          var theme = themes[index];
+          var root = document.documentElement;
+          root.__themes = themes;
+          root.setAttribute("data-theme", theme.name);
+          root.setAttribute("data-theme-step", String(index));
+          root.style.setProperty("--theme-slider-fill", index * 25 + "%");
+          Object.keys(theme).forEach(function (key) {
+            if (key === "name") return;
+            root.style.setProperty("--theme-" + key.replace(/[A-Z]/g, function (m) { return "-" + m.toLowerCase(); }), theme[key]);
+          });
+        } catch (error) {}
+      })();
+    </script>
+  </head>
+  <body>
+    <main class="page-shell" aria-labelledby="site-name">
+      <header class="top-row">
+        <h1 id="site-name" class="name" aria-live="polite" data-butterfly-perch>Vaibhaav</h1>
+        <div class="theme-slider" aria-label="Appearance" role="group" data-butterfly-perch>
+          <button type="button" aria-label="dawn theme" data-step="0"></button>
+          <button type="button" aria-label="morning theme" data-step="1"></button>
+          <button type="button" aria-label="noon theme" data-step="2"></button>
+          <button type="button" aria-label="evening theme" data-step="3"></button>
+          <button type="button" aria-label="night theme" data-step="4"></button>
+          <span class="slider-track" aria-hidden="true">
+            <span class="slider-fill"></span>
+            <span class="slider-dot dot-1"></span>
+            <span class="slider-dot dot-2"></span>
+            <span class="slider-dot dot-3"></span>
+          </span>
+        </div>
+      </header>
+
+      <section class="intro" aria-label="Intro">
+        <p>
+          I&apos;m an AI engineer and researcher from India. I build agent
+          orchestration platforms, machine learning systems, and research
+          workflows with product engineering, model behavior, and rigorous
+          experimentation.
+        </p>
+        <p>
+          I work across multi-agent systems, LLM architectures, and RL
+          environments, with strong product instincts for shipping thoughtful
+          features in production-grade applications.
+        </p>
+        <p>
+          Find my projects on
+          <a href="https://github.com/Vaibhaav-Tiwari" target="_blank" rel="noopener noreferrer">GitHub</a>
+          or reach out on
+          <a href="mailto:vaibhaavtiwari@gmail.com" data-butterfly-perch>Email</a>,
+          <a href="https://linkedin.com/in/vaibhaavtiwari" target="_blank" rel="noopener noreferrer">LinkedIn</a>, or
+          <a href="https://x.com/battarchicken" target="_blank" rel="noopener noreferrer">X</a>.
+        </p>
+      </section>
+
+      <section class="section" aria-labelledby="work-heading">
+        <div class="section-title">
+          <h2 id="work-heading">Experience</h2>
+        </div>
+        <div class="item-list">
+          <a class="row row-with-date" href="https://github.com/Untrivial-ai/agent-orchestrator" target="_blank" rel="noopener noreferrer">
+            <span class="icon mask-icon" style="--mask-url: url('assets/source/ao-logo.svg')"></span>
+            <span class="row-label">AI Engineer, Agent Orchestrator</span>
+            <span class="row-date">May 2026 - Present</span>
+          </a>
+          <a class="row row-with-date" href="https://www.iitp.ac.in/" target="_blank" rel="noopener noreferrer">
+            <span class="icon brand-icon iitp-brand" aria-hidden="true">
+              <img src="assets/source/iit-patna-logo.png" alt="" />
+            </span>
+            <span class="row-label">Research Intern, IIT Patna</span>
+            <span class="row-date">Feb 2026 - Jun 2026</span>
+          </a>
+          <a class="row row-with-date" href="https://sc.edu/" target="_blank" rel="noopener noreferrer">
+            <span class="icon brand-icon aiisc-brand" aria-hidden="true">
+              <img src="assets/source/aiisc-brain-logo.png" alt="" />
+            </span>
+            <span class="row-label">Research Intern, AI Institute, University of South Carolina</span>
+            <span class="row-date">Feb 2025 - Sep 2025</span>
+          </a>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="projects-heading">
+        <div class="section-title">
+          <h2 id="projects-heading">Projects</h2>
+        </div>
+        <div class="item-list">
+          <a class="row" href="https://github.com/Vaibhaav-Tiwari/fly-doom-jev" target="_blank" rel="noopener noreferrer">
+            <span class="icon mask-icon doom-icon" style="--mask-url: url('assets/source/doom-logo.svg')" aria-hidden="true"></span>
+            <span class="row-label">When Jev Meets a Fly in DOOM</span>
+            <span class="row-sep">·</span>
+            <span class="row-desc">A 211K-neuron fruit-fly connectome and Jev decision model play DOOM</span>
+          </a>
+          <a class="row" href="https://github.com/Vaibhaav-Tiwari/ae-lab" target="_blank" rel="noopener noreferrer" data-butterfly-perch>
+            <span class="icon lens-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M4.7 9.2c3.6-2.2 11-2.2 14.6 0M4.7 14.8c3.6 2.2 11 2.2 14.6 0M9.2 4.7c-2.2 3.6-2.2 11 0 14.6M14.8 4.7c2.2 3.6 2.2 11 0 14.6" fill="none" stroke="currentColor" stroke-width="1.2"/></svg>
+            </span>
+            <span class="row-label">ae-lab</span>
+            <span class="row-sep">·</span>
+            <span class="row-desc">AutoEncoders for unsupervised super-resolution analysis of gravitational lensing images</span>
+          </a>
+          <a class="row" href="https://github.com/Vaibhaav-Tiwari/optimgrad" target="_blank" rel="noopener noreferrer">
+            <span class="icon gradient-icon" aria-hidden="true">&#8711;</span>
+            <span class="row-label">optimgrad</span>
+            <span class="row-sep">·</span>
+            <span class="row-desc">Micro autograd engine mirroring PyTorch with 20+ deep learning ops</span>
+          </a>
+          <a class="row" href="https://colab.research.google.com/drive/1myQ7Mg1i_pJ76D3Z0CaS1svxRi8R86EU?usp=sharing" target="_blank" rel="noopener noreferrer">
+            <span class="icon chart-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M4 19.5h16M6.5 16v-4M11 16V8.5M15.5 16v-6M20 16V5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+            </span>
+            <span class="row-label">Amazon ML Challenge Project</span>
+            <span class="row-sep">·</span>
+            <span class="row-desc">Regression model for item price prediction on a 150K+ sample dataset</span>
+          </a>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="writing-heading">
+        <div class="section-title">
+          <h2 id="writing-heading">Recent writing</h2>
+        </div>
+        <div class="item-list">
+          <a class="row writing-row" href="https://x.com/battarchicken/status/2074117419367542887?s=20" target="_blank" rel="noopener noreferrer">
+            <span class="writing-title">Notes to self. Be scared.</span>
+            <span class="row-date">Jul 2026</span>
+          </a>
+          <a class="row writing-row" href="https://x.com/battarchicken/status/2062609111460786575" target="_blank" rel="noopener noreferrer">
+            <span class="writing-title">On context anxiety</span>
+            <span class="row-date">Jun 2026</span>
+          </a>
+          <a class="row writing-row" href="https://futuristic-periwinkle-d37.notion.site/optimism-in-the-face-of-uncertainty-22fdbe1c425580fcad1fd014a91f5f68" target="_blank" rel="noopener noreferrer">
+            <span class="writing-title">Optimism in the face of uncertainty</span>
+            <span class="row-date">Notion</span>
+          </a>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="achievements-heading">
+        <div class="section-title">
+          <h2 id="achievements-heading">Achievements</h2>
+        </div>
+        <div class="item-list">
+          <div class="row info-row">
+            <span class="writing-title">Won Centific Premier Hackathon 2.0 in the AI Research Engineering track</span>
+            <span class="row-date">10,000+ applicants</span>
+          </div>
+          <div class="row info-row">
+            <span class="writing-title">Ranked 812 overall in the Amazon ML Challenge</span>
+            <span class="row-date">Top 4%</span>
+          </div>
+          <div class="row info-row">
+            <span class="writing-title">Amazon ML Summer School mentee</span>
+            <span class="row-date">Top 3,000 / 80,000+</span>
+          </div>
+          <div class="row info-row">
+            <span class="writing-title">Selected for Algoverse AI Research Fellowship</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="postcard-grid" aria-label="Postcards">
+        <article class="postcard" data-butterfly-perch>
+          <svg class="postcard-shape" viewBox="0 0 300 260" preserveAspectRatio="none" aria-hidden="true">
+            <path d="M 7 7 A 7 7 0 0 0 21.3 7 A 1.8125 1.8125 0 0 1 28.45 7 A 7 7 0 0 0 42.75 7 A 1.8125 1.8125 0 0 1 49.9 7 A 7 7 0 0 0 64.2 7 A 1.8125 1.8125 0 0 1 71.35 7 A 7 7 0 0 0 85.65 7 A 1.8125 1.8125 0 0 1 92.8 7 A 7 7 0 0 0 107.1 7 A 1.8125 1.8125 0 0 1 114.25 7 A 7 7 0 0 0 128.55 7 A 1.8125 1.8125 0 0 1 135.7 7 A 7 7 0 0 0 150 7 A 1.8125 1.8125 0 0 1 157.15 7 A 7 7 0 0 0 171.45 7 A 1.8125 1.8125 0 0 1 178.6 7 A 7 7 0 0 0 192.9 7 A 1.8125 1.8125 0 0 1 200.05 7 A 7 7 0 0 0 214.35 7 A 1.8125 1.8125 0 0 1 221.5 7 A 7 7 0 0 0 235.8 7 A 1.8125 1.8125 0 0 1 242.95 7 A 7 7 0 0 0 257.25 7 A 1.8125 1.8125 0 0 1 264.4 7 A 7 7 0 0 0 278.7 7 A 1.8125 1.8125 0 0 1 293 7 A 7 7 0 0 0 293 21.3 A 1.8125 1.8125 0 0 1 293 28.45 A 7 7 0 0 0 293 42.75 A 1.8125 1.8125 0 0 1 293 49.9 A 7 7 0 0 0 293 64.2 A 1.8125 1.8125 0 0 1 293 71.35 A 7 7 0 0 0 293 85.65 A 1.8125 1.8125 0 0 1 293 92.8 A 7 7 0 0 0 293 107.1 A 1.8125 1.8125 0 0 1 293 114.25 A 7 7 0 0 0 293 128.55 A 1.8125 1.8125 0 0 1 293 135.7 A 7 7 0 0 0 293 150 A 1.8125 1.8125 0 0 1 293 157.15 A 7 7 0 0 0 293 171.45 A 1.8125 1.8125 0 0 1 293 178.6 A 7 7 0 0 0 293 192.9 A 1.8125 1.8125 0 0 1 293 200.05 A 7 7 0 0 0 293 214.35 A 1.8125 1.8125 0 0 1 293 221.5 A 7 7 0 0 0 293 235.8 A 1.8125 1.8125 0 0 1 293 242.95 A 7 7 0 0 0 293 253 A 7 7 0 0 0 278.7 253 A 1.8125 1.8125 0 0 1 271.55 253 A 7 7 0 0 0 257.25 253 A 1.8125 1.8125 0 0 1 250.1 253 A 7 7 0 0 0 235.8 253 A 1.8125 1.8125 0 0 1 228.65 253 A 7 7 0 0 0 214.35 253 A 1.8125 1.8125 0 0 1 207.2 253 A 7 7 0 0 0 192.9 253 A 1.8125 1.8125 0 0 1 185.75 253 A 7 7 0 0 0 171.45 253 A 1.8125 1.8125 0 0 1 164.3 253 A 7 7 0 0 0 150 253 A 1.8125 1.8125 0 0 1 142.85 253 A 7 7 0 0 0 128.55 253 A 1.8125 1.8125 0 0 1 121.4 253 A 7 7 0 0 0 107.1 253 A 1.8125 1.8125 0 0 1 99.95 253 A 7 7 0 0 0 85.65 253 A 1.8125 1.8125 0 0 1 78.5 253 A 7 7 0 0 0 64.2 253 A 1.8125 1.8125 0 0 1 57.05 253 A 7 7 0 0 0 42.75 253 A 1.8125 1.8125 0 0 1 35.6 253 A 7 7 0 0 0 21.3 253 A 1.8125 1.8125 0 0 1 14.15 253 A 7 7 0 0 0 7 253 A 7 7 0 0 0 7 238.7 A 1.8125 1.8125 0 0 1 7 231.55 A 7 7 0 0 0 7 217.25 A 1.8125 1.8125 0 0 1 7 210.1 A 7 7 0 0 0 7 195.8 A 1.8125 1.8125 0 0 1 7 188.65 A 7 7 0 0 0 7 174.35 A 1.8125 1.8125 0 0 1 7 167.2 A 7 7 0 0 0 7 152.9 A 1.8125 1.8125 0 0 1 7 145.75 A 7 7 0 0 0 7 131.45 A 1.8125 1.8125 0 0 1 7 124.3 A 7 7 0 0 0 7 110 A 1.8125 1.8125 0 0 1 7 102.85 A 7 7 0 0 0 7 88.55 A 1.8125 1.8125 0 0 1 7 81.4 A 7 7 0 0 0 7 67.1 A 1.8125 1.8125 0 0 1 7 59.95 A 7 7 0 0 0 7 45.65 A 1.8125 1.8125 0 0 1 7 38.5 A 7 7 0 0 0 7 24.2 A 1.8125 1.8125 0 0 1 7 17.05 Z" />
+          </svg>
+          <div class="postcard-inner">
+            <img src="assets/source/portrait-green.jpg" alt="" draggable="false" />
+            <p>rushing to train my models</p>
+          </div>
+        </article>
+        <article class="postcard optional-card">
+          <svg class="postcard-shape" viewBox="0 0 300 260" preserveAspectRatio="none" aria-hidden="true">
+            <path d="M 7 7 A 7 7 0 0 0 21.3 7 A 1.8125 1.8125 0 0 1 28.45 7 A 7 7 0 0 0 42.75 7 A 1.8125 1.8125 0 0 1 49.9 7 A 7 7 0 0 0 64.2 7 A 1.8125 1.8125 0 0 1 71.35 7 A 7 7 0 0 0 85.65 7 A 1.8125 1.8125 0 0 1 92.8 7 A 7 7 0 0 0 107.1 7 A 1.8125 1.8125 0 0 1 114.25 7 A 7 7 0 0 0 128.55 7 A 1.8125 1.8125 0 0 1 135.7 7 A 7 7 0 0 0 150 7 A 1.8125 1.8125 0 0 1 157.15 7 A 7 7 0 0 0 171.45 7 A 1.8125 1.8125 0 0 1 178.6 7 A 7 7 0 0 0 192.9 7 A 1.8125 1.8125 0 0 1 200.05 7 A 7 7 0 0 0 214.35 7 A 1.8125 1.8125 0 0 1 221.5 7 A 7 7 0 0 0 235.8 7 A 1.8125 1.8125 0 0 1 242.95 7 A 7 7 0 0 0 257.25 7 A 1.8125 1.8125 0 0 1 264.4 7 A 7 7 0 0 0 278.7 7 A 1.8125 1.8125 0 0 1 293 7 A 7 7 0 0 0 293 21.3 A 1.8125 1.8125 0 0 1 293 28.45 A 7 7 0 0 0 293 42.75 A 1.8125 1.8125 0 0 1 293 49.9 A 7 7 0 0 0 293 64.2 A 1.8125 1.8125 0 0 1 293 71.35 A 7 7 0 0 0 293 85.65 A 1.8125 1.8125 0 0 1 293 92.8 A 7 7 0 0 0 293 107.1 A 1.8125 1.8125 0 0 1 293 114.25 A 7 7 0 0 0 293 128.55 A 1.8125 1.8125 0 0 1 293 135.7 A 7 7 0 0 0 293 150 A 1.8125 1.8125 0 0 1 293 157.15 A 7 7 0 0 0 293 171.45 A 1.8125 1.8125 0 0 1 293 178.6 A 7 7 0 0 0 293 192.9 A 1.8125 1.8125 0 0 1 293 200.05 A 7 7 0 0 0 293 214.35 A 1.8125 1.8125 0 0 1 293 221.5 A 7 7 0 0 0 293 235.8 A 1.8125 1.8125 0 0 1 293 242.95 A 7 7 0 0 0 293 253 A 7 7 0 0 0 278.7 253 A 1.8125 1.8125 0 0 1 271.55 253 A 7 7 0 0 0 257.25 253 A 1.8125 1.8125 0 0 1 250.1 253 A 7 7 0 0 0 235.8 253 A 1.8125 1.8125 0 0 1 228.65 253 A 7 7 0 0 0 214.35 253 A 1.8125 1.8125 0 0 1 207.2 253 A 7 7 0 0 0 192.9 253 A 1.8125 1.8125 0 0 1 185.75 253 A 7 7 0 0 0 171.45 253 A 1.8125 1.8125 0 0 1 164.3 253 A 7 7 0 0 0 150 253 A 1.8125 1.8125 0 0 1 142.85 253 A 7 7 0 0 0 128.55 253 A 1.8125 1.8125 0 0 1 121.4 253 A 7 7 0 0 0 107.1 253 A 1.8125 1.8125 0 0 1 99.95 253 A 7 7 0 0 0 85.65 253 A 1.8125 1.8125 0 0 1 78.5 253 A 7 7 0 0 0 64.2 253 A 1.8125 1.8125 0 0 1 57.05 253 A 7 7 0 0 0 42.75 253 A 1.8125 1.8125 0 0 1 35.6 253 A 7 7 0 0 0 21.3 253 A 1.8125 1.8125 0 0 1 14.15 253 A 7 7 0 0 0 7 253 A 7 7 0 0 0 7 238.7 A 1.8125 1.8125 0 0 1 7 231.55 A 7 7 0 0 0 7 217.25 A 1.8125 1.8125 0 0 1 7 210.1 A 7 7 0 0 0 7 195.8 A 1.8125 1.8125 0 0 1 7 188.65 A 7 7 0 0 0 7 174.35 A 1.8125 1.8125 0 0 1 7 167.2 A 7 7 0 0 0 7 152.9 A 1.8125 1.8125 0 0 1 7 145.75 A 7 7 0 0 0 7 131.45 A 1.8125 1.8125 0 0 1 7 124.3 A 7 7 0 0 0 7 110 A 1.8125 1.8125 0 0 1 7 102.85 A 7 7 0 0 0 7 88.55 A 1.8125 1.8125 0 0 1 7 81.4 A 7 7 0 0 0 7 67.1 A 1.8125 1.8125 0 0 1 7 59.95 A 7 7 0 0 0 7 45.65 A 1.8125 1.8125 0 0 1 7 38.5 A 7 7 0 0 0 7 24.2 A 1.8125 1.8125 0 0 1 7 17.05 Z" />
+          </svg>
+          <div class="postcard-inner">
+            <img src="assets/source/portrait-home.jpg" alt="" draggable="false" />
+            <p>building cool shit at the AO house</p>
+          </div>
+        </article>
+        <article class="postcard optional-card">
+          <svg class="postcard-shape" viewBox="0 0 300 260" preserveAspectRatio="none" aria-hidden="true">
+            <path d="M 7 7 A 7 7 0 0 0 21.3 7 A 1.8125 1.8125 0 0 1 28.45 7 A 7 7 0 0 0 42.75 7 A 1.8125 1.8125 0 0 1 49.9 7 A 7 7 0 0 0 64.2 7 A 1.8125 1.8125 0 0 1 71.35 7 A 7 7 0 0 0 85.65 7 A 1.8125 1.8125 0 0 1 92.8 7 A 7 7 0 0 0 107.1 7 A 1.8125 1.8125 0 0 1 114.25 7 A 7 7 0 0 0 128.55 7 A 1.8125 1.8125 0 0 1 135.7 7 A 7 7 0 0 0 150 7 A 1.8125 1.8125 0 0 1 157.15 7 A 7 7 0 0 0 171.45 7 A 1.8125 1.8125 0 0 1 178.6 7 A 7 7 0 0 0 192.9 7 A 1.8125 1.8125 0 0 1 200.05 7 A 7 7 0 0 0 214.35 7 A 1.8125 1.8125 0 0 1 221.5 7 A 7 7 0 0 0 235.8 7 A 1.8125 1.8125 0 0 1 242.95 7 A 7 7 0 0 0 257.25 7 A 1.8125 1.8125 0 0 1 264.4 7 A 7 7 0 0 0 278.7 7 A 1.8125 1.8125 0 0 1 293 7 A 7 7 0 0 0 293 21.3 A 1.8125 1.8125 0 0 1 293 28.45 A 7 7 0 0 0 293 42.75 A 1.8125 1.8125 0 0 1 293 49.9 A 7 7 0 0 0 293 64.2 A 1.8125 1.8125 0 0 1 293 71.35 A 7 7 0 0 0 293 85.65 A 1.8125 1.8125 0 0 1 293 92.8 A 7 7 0 0 0 293 107.1 A 1.8125 1.8125 0 0 1 293 114.25 A 7 7 0 0 0 293 128.55 A 1.8125 1.8125 0 0 1 293 135.7 A 7 7 0 0 0 293 150 A 1.8125 1.8125 0 0 1 293 157.15 A 7 7 0 0 0 293 171.45 A 1.8125 1.8125 0 0 1 293 178.6 A 7 7 0 0 0 293 192.9 A 1.8125 1.8125 0 0 1 293 200.05 A 7 7 0 0 0 293 214.35 A 1.8125 1.8125 0 0 1 293 221.5 A 7 7 0 0 0 293 235.8 A 1.8125 1.8125 0 0 1 293 242.95 A 7 7 0 0 0 293 253 A 7 7 0 0 0 278.7 253 A 1.8125 1.8125 0 0 1 271.55 253 A 7 7 0 0 0 257.25 253 A 1.8125 1.8125 0 0 1 250.1 253 A 7 7 0 0 0 235.8 253 A 1.8125 1.8125 0 0 1 228.65 253 A 7 7 0 0 0 214.35 253 A 1.8125 1.8125 0 0 1 207.2 253 A 7 7 0 0 0 192.9 253 A 1.8125 1.8125 0 0 1 185.75 253 A 7 7 0 0 0 171.45 253 A 1.8125 1.8125 0 0 1 164.3 253 A 7 7 0 0 0 150 253 A 1.8125 1.8125 0 0 1 142.85 253 A 7 7 0 0 0 128.55 253 A 1.8125 1.8125 0 0 1 121.4 253 A 7 7 0 0 0 107.1 253 A 1.8125 1.8125 0 0 1 99.95 253 A 7 7 0 0 0 85.65 253 A 1.8125 1.8125 0 0 1 78.5 253 A 7 7 0 0 0 64.2 253 A 1.8125 1.8125 0 0 1 57.05 253 A 7 7 0 0 0 42.75 253 A 1.8125 1.8125 0 0 1 35.6 253 A 7 7 0 0 0 21.3 253 A 1.8125 1.8125 0 0 1 14.15 253 A 7 7 0 0 0 7 253 A 7 7 0 0 0 7 238.7 A 1.8125 1.8125 0 0 1 7 231.55 A 7 7 0 0 0 7 217.25 A 1.8125 1.8125 0 0 1 7 210.1 A 7 7 0 0 0 7 195.8 A 1.8125 1.8125 0 0 1 7 188.65 A 7 7 0 0 0 7 174.35 A 1.8125 1.8125 0 0 1 7 167.2 A 7 7 0 0 0 7 152.9 A 1.8125 1.8125 0 0 1 7 145.75 A 7 7 0 0 0 7 131.45 A 1.8125 1.8125 0 0 1 7 124.3 A 7 7 0 0 0 7 110 A 1.8125 1.8125 0 0 1 7 102.85 A 7 7 0 0 0 7 88.55 A 1.8125 1.8125 0 0 1 7 81.4 A 7 7 0 0 0 7 67.1 A 1.8125 1.8125 0 0 1 7 59.95 A 7 7 0 0 0 7 45.65 A 1.8125 1.8125 0 0 1 7 38.5 A 7 7 0 0 0 7 24.2 A 1.8125 1.8125 0 0 1 7 17.05 Z" />
+          </svg>
+          <div class="postcard-inner">
+            <img src="assets/source/portrait-helmet.jpg" alt="" draggable="false" />
+            <p>im cool. not my laptop tho, with all those agents running</p>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <div class="butterfly-garden" aria-hidden="true">
+      <span class="butterfly butterfly-yellow" data-butterfly>
+        <span class="butterfly-sprite"></span>
+      </span>
+      <span class="butterfly butterfly-blue" data-butterfly>
+        <span class="butterfly-sprite"></span>
+      </span>
+      <span class="butterfly butterfly-coral" data-butterfly>
+        <span class="butterfly-sprite"></span>
+      </span>
+    </div>
+
+    <script src="script.js?v=annotations-4"></script>
+  </body>
+</html>
