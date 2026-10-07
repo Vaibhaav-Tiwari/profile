@@ -567,8 +567,8 @@ html[data-theme="noon"] .aiisc-brand img {
 
 @media (max-width: 800px) {
   .page-shell {
-    width: 100%;
-    max-width: none;
+    width: 100vw;
+    max-width: 100vw;
     margin: 0;
     padding-top: 72px;
     touch-action: pan-y;
@@ -639,7 +639,4 @@ html[data-theme="noon"] .aiisc-brand img {
     grid-template-columns: 1fr;
   }
 
-  .butterfly:nth-child(3) {
-    display: none;
-  }
 }
