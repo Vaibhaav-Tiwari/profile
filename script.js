@@ -101,6 +101,7 @@ window.setTimeout(animateName, delay);
 
 const butterflies = [...document.querySelectorAll("[data-butterfly]")];
 const butterflyPerches = [...document.querySelectorAll("[data-butterfly-perch]")];
+const dog = document.querySelector("[data-dog]");
 const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
 const occupiedPerches = new Set();
 
@@ -132,11 +133,25 @@ function nearbyViewportPoint(current) {
 
 function perchPoint(perch, butterflyIndex) {
   const rect = perch.getBoundingClientRect();
+  if (perch === dog) {
+    return {
+      x: Math.max(12, Math.min(window.innerWidth - 48, rect.left + rect.width * 0.42 - 18)),
+      y: Math.max(14, Math.min(window.innerHeight - 48, rect.top + rect.height * 0.46 - 18)),
+    };
+  }
   const x = rect.left + Math.min(rect.width - 4, 8 + butterflyIndex * 9);
   return {
     x: Math.max(12, Math.min(window.innerWidth - 48, x)),
     y: Math.max(14, Math.min(window.innerHeight - 48, rect.top - 28)),
   };
+}
+
+function makeDogGoofy() {
+  if (!dog) return;
+  dog.classList.remove("goofy");
+  void dog.offsetWidth;
+  dog.classList.add("goofy");
+  window.setTimeout(() => dog.classList.remove("goofy"), 800);
 }
 
 function transformAt(point, facing, rotation = 0) {
@@ -257,6 +272,7 @@ async function animateButterfly(butterfly, index) {
     flight.cancel();
     current = target;
     butterfly.dataset.state = targetPerch ? "resting" : "hovering";
+    if (targetPerch === dog) makeDogGoofy();
     await wait(targetPerch ? 1900 + Math.random() * 3000 : 120 + Math.random() * 260);
     if (targetPerch) occupiedPerches.delete(targetPerch);
   }
