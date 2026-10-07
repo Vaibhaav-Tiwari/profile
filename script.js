@@ -102,40 +102,8 @@ window.setTimeout(animateName, delay);
 const butterflies = [...document.querySelectorAll("[data-butterfly]")];
 const butterflyPerches = [...document.querySelectorAll("[data-butterfly-perch]")];
 const dog = document.querySelector("[data-dog]");
-const pixelDog = document.querySelector("[data-pixel-dog]");
 const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
 const occupiedPerches = new Set();
-
-const dogFrames = [
-  ["      oo      ", "     ooo      ", "  ddddddd     ", " ddbbbbbbdd   ", " dbbWbbWbbd   ", " dbbbbbbbbd   ", "  ddbppbdd    ", "   ddddd      ", "  ddddddd     ", " ddddddddd    ", "dddddddddddd  ", "ddddd  ddddd  ", "ddddd  ddddd  "],
-  ["      oo      ", "     ooo      ", "  ddddddd     ", " ddbbbbbbdd   ", " dbbWbbWbbd   ", " dbbbbbbbbd   ", "  ddbppbdd    ", "   ddddd      ", "  ddddddd     ", " ddddddddd    ", "dddddddddddd  ", "  ddddd  dddd ", "  ddddd  dddd "],
-];
-const dogColors = { d: "#2e1c1b", b: "#a86442", W: "#f4d8b3", p: "#e67a79", o: "#df9a52" };
-let dogFrame = 0;
-
-function renderPixelDog() {
-  if (!pixelDog) return;
-  pixelDog.replaceChildren();
-  dogFrames[dogFrame].forEach((row, y) => {
-    [...row].forEach((color, x) => {
-      if (!dogColors[color]) return;
-      const pixel = document.createElement("i");
-      pixel.className = "pixel";
-      pixel.style.left = `${x * 5}px`;
-      pixel.style.top = `${y * 5}px`;
-      pixel.style.background = dogColors[color];
-      pixelDog.append(pixel);
-    });
-  });
-}
-
-renderPixelDog();
-if (!reducedMotion.matches) {
-  window.setInterval(() => {
-    dogFrame = (dogFrame + 1) % dogFrames.length;
-    renderPixelDog();
-  }, 260);
-}
 
 const wait = (duration) => new Promise((resolve) => window.setTimeout(resolve, duration));
 
@@ -167,8 +135,8 @@ function perchPoint(perch, butterflyIndex) {
   const rect = perch.getBoundingClientRect();
   if (perch === dog) {
     return {
-      x: Math.max(12, Math.min(window.innerWidth - 48, rect.left + rect.width * 0.48 - 18)),
-      y: Math.max(14, Math.min(window.innerHeight - 48, rect.top + rect.height * 0.34 - 18)),
+      x: Math.max(12, Math.min(window.innerWidth - 48, rect.left + rect.width * 0.42 - 18)),
+      y: Math.max(14, Math.min(window.innerHeight - 48, rect.top + rect.height * 0.46 - 18)),
     };
   }
   const x = rect.left + Math.min(rect.width - 4, 8 + butterflyIndex * 9);
